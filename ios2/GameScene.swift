@@ -32,13 +32,14 @@ class GameScen2e: SKScene {
 
 class GameScene: SKScene {
   
-  lazy var ball: SKSpriteNode = self.childNode(withName: "ball") as! SKSpriteNode
-  var enemy = SKSpriteNode()
-  var main = SKSpriteNode()
-  var arrow1 = SKSpriteNode()
+  lazy var ball:   SKSpriteNode = self.childNode(withName: "ball") as! SKSpriteNode
+  lazy var enemy:  SKSpriteNode  = self.childNode(withName: "enemy") as! SKSpriteNode
+  lazy var main:   SKSpriteNode = self.childNode(withName: "main") as! SKSpriteNode
   
-  var topLabel = SKLabelNode()
-  var bottomLabel = SKLabelNode()
+  let arrow1 = SKSpriteNode()
+  
+  lazy var topLabel: SKLabelNode = self.childNode(withName: "topLabel") as! SKLabelNode
+  lazy var bottomLabel: SKLabelNode = self.childNode(withName: "bottomLabel") as! SKLabelNode
   
   var backgroundColorEasy = UIColor(red: 50/255.0, green: 189/255.0, blue: 18/255.0, alpha: 1.0)
   var backgroundColorHard = UIColor(red: 204/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1.0)
@@ -49,41 +50,26 @@ class GameScene: SKScene {
   let maximumRotation = CGFloat(45)
   
   override func didMove(to view: SKView) {
-    
-    topLabel = self.childNode(withName: "topLabel") as! SKLabelNode
-    bottomLabel = self.childNode(withName: "bottomLabel") as! SKLabelNode
-    
-    ball = self.childNode(withName: "ball") as! SKSpriteNode
-    enemy = self.childNode(withName: "enemy") as! SKSpriteNode
-    enemy.position.y = (self.frame.height / 2) - 50
-    main = self.childNode(withName: "main") as! SKSpriteNode
-    main.position.y = (-self.frame.height / 2) + 50
     arrow1.position.x = (self.frame.width / 2) - 25
     
-    ///
+    main.position.y = (-self.frame.height / 2) + 50
+    // Main constraints:
     let deg45 = CGFloat(0.785398)
     let degNeg45 = -deg45
-    
     let constraint = [SKConstraint.zRotation(SKRange(lowerLimit: degNeg45, upperLimit: deg45))]
     main.constraints = constraint
-    ///
     
     let border = SKPhysicsBody(edgeLoopFrom: self.frame)
-    
     border.friction = 0
     border.restitution = 1
     self.physicsBody = border
     
-    startGame()
-  }
-  
-  func startGame() {
+    // Start game:
     score = [0,0]
     topLabel.text = "\(score[1])"
     bottomLabel.text = "\(score[0])"
     ball.physicsBody!.applyImpulse(CGVector(dx: 10.0, dy: 10.0))
   }
-  
   
   func addScore(playerWhoWon:SKSpriteNode) {
     
