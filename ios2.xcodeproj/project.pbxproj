@@ -15,8 +15,7 @@
 		4D2CFBAF1EEE19C50007895D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2CFBAD1EEE19C50007895D /* Main.storyboard */; };
 		4D2CFBB11EEE19C50007895D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2CFBB01EEE19C50007895D /* Assets.xcassets */; };
 		4D2CFBB41EEE19C50007895D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2CFBB21EEE19C50007895D /* LaunchScreen.storyboard */; };
-		4D2CFBBC1EEE1A690007895D /* PixelSplitter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D2CFBBB1EEE1A690007895D /* PixelSplitter-Bold.ttf */; };
-		4D2CFBBE1EEE1A820007895D /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2CFBBD1EEE1A820007895D /* MenuVC.swift */; };
+		4D4248C41EEEF51A00EB0C37 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4248C31EEEF51A00EB0C37 /* MenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +29,9 @@
 		4D2CFBB01EEE19C50007895D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2CFBB31EEE19C50007895D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D2CFBB51EEE19C50007895D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D2CFBBB1EEE1A690007895D /* PixelSplitter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PixelSplitter-Bold.ttf"; path = "../../Pong/PixelSplitter-Bold.ttf"; sourceTree = "<group>"; };
-		4D2CFBBD1EEE1A820007895D /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuVC.swift; path = ../../Pong/MenuVC.swift; sourceTree = "<group>"; };
-		4D2CFBBF1EEE1A8F0007895D /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LLPIXEL3.ttf; path = ../../Pong/LLPIXEL3.ttf; sourceTree = "<group>"; };
+		4D4248C31EEEF51A00EB0C37 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		4D4248C71EEEF53D00EB0C37 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
+		4D4248C81EEEF53D00EB0C37 /* PixelSplitter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelSplitter-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +70,11 @@
 				4D2CFBA91EEE19C40007895D /* GameScene.swift */,
 				4D2CFBAB1EEE19C50007895D /* GameViewController.swift */,
 				4D2CFBAD1EEE19C50007895D /* Main.storyboard */,
-				4D2CFBBF1EEE1A8F0007895D /* LLPIXEL3.ttf */,
 				4D2CFBB01EEE19C50007895D /* Assets.xcassets */,
-				4D2CFBBD1EEE1A820007895D /* MenuVC.swift */,
-				4D2CFBBB1EEE1A690007895D /* PixelSplitter-Bold.ttf */,
+				4D4248C31EEEF51A00EB0C37 /* MenuVC.swift */,
 				4D2CFBB21EEE19C50007895D /* LaunchScreen.storyboard */,
+				4D4248C71EEEF53D00EB0C37 /* LLPIXEL3.ttf */,
+				4D4248C81EEEF53D00EB0C37 /* PixelSplitter-Bold.ttf */,
 				4D2CFBB51EEE19C50007895D /* Info.plist */,
 			);
 			path = ios2;
@@ -144,7 +143,6 @@
 				4D2CFBAF1EEE19C50007895D /* Main.storyboard in Resources */,
 				4D2CFBA61EEE19C40007895D /* GameScene.sks in Resources */,
 				4D2CFBB11EEE19C50007895D /* Assets.xcassets in Resources */,
-				4D2CFBBC1EEE1A690007895D /* PixelSplitter-Bold.ttf in Resources */,
 				4D2CFBB41EEE19C50007895D /* LaunchScreen.storyboard in Resources */,
 				4D2CFBA81EEE19C40007895D /* Actions.sks in Resources */,
 			);
@@ -158,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D2CFBAA1EEE19C40007895D /* GameScene.swift in Sources */,
-				4D2CFBBE1EEE1A820007895D /* MenuVC.swift in Sources */,
+				4D4248C41EEEF51A00EB0C37 /* MenuVC.swift in Sources */,
 				4D2CFBAC1EEE19C50007895D /* GameViewController.swift in Sources */,
 				4D2CFBA41EEE19C40007895D /* AppDelegate.swift in Sources */,
 			);
