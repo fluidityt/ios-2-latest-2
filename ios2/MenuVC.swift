@@ -9,12 +9,14 @@
 import Foundation
 import UIKit
 
-enum gameType {
+enum GameType {
     case easy
     case wobble
     case player2
 
 }
+
+var currentGameType: GameType = .easy
 
 class MenuVC : UIViewController {
     
@@ -28,7 +30,7 @@ class MenuVC : UIViewController {
         moveToGame(game: .wobble)
     }
     
-    func moveToGame(game: gameType) {
+    func moveToGame(game: GameType) {
         let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
         
         currentGameType = game
